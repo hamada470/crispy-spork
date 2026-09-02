@@ -53,7 +53,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f8f9fa; color: #2d3748; line-height: 1.8; padding-top: 85px; padding-bottom: 80px; }
         
-        /* زر الاتصال الثابت العلوي (أصفر مميز) مع إضافة الشعار أكبر */
+        /* زر الاتصال الثابت العلوي (أصفر مميز) مع إضافة الشعار المستطيل */
         .top-call-bar {
             position: fixed; top: 0; left: 0; width: 100%;
             background-color: #FFD700; color: #1a202c; text-align: center;
@@ -62,26 +62,31 @@
             text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 12px;
         }
 
-        /* صورة الشعار المصغرة بالشريط العائم بالأعلى - بحجم كبير */
+        /* صورة الشعار المستطيلة بالشريط العائم بالأعلى */
         .top-bar-logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
+            height: 55px;
+            width: auto;
+            max-width: 90px;
+            border-radius: 6px;
+            object-fit: contain;
             border: 2px solid #1a202c;
+            background-color: #ffffff;
         }
 
         header { background: linear-gradient(135deg, #003366, #0056b3); color: white; text-align: center; padding: 40px 20px; }
         
-        /* صورة الشعار الرئيسية في الهيدر - بحجم كبير */
+        /* صورة الشعار المستطيلة الرئيسية في الهيدر */
         .main-header-logo {
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #FFD700;
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            max-height: 220px;
+            border-radius: 12px;
+            object-fit: contain;
+            border: 4px solid #FFD700;
             margin-bottom: 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            background-color: #ffffff;
         }
 
         header h1 { font-size: 34px; margin-bottom: 12px; font-weight: 900; }
@@ -151,7 +156,7 @@
 </head>
 <body>
 
-    <!-- 1. زر الاتصال الثابت بالأعلى مع إضافة الشعار بحجم أكبر -->
+    <!-- 1. زر الاتصال الثابت بالأعلى مع إضافة الشعار المستطيل -->
     <a href="tel:0540774058" class="top-call-bar">
         <img src="cc.jpg" alt="شعار شركة تسليك مجاري بالرياض" class="top-bar-logo">
         <span><i class="fa-solid fa-phone-volume"></i> أسرع شركة تسليك مجاري بالرياض - اتصل الآن: 0540774058</span>
@@ -159,7 +164,7 @@
 
     <!-- الهيدر الرئيسي المحسن للـ SEO -->
     <header>
-        <!-- الشعار الرئيسي في واجهة الموقع بحجم أكبر -->
+        <!-- الشعار الرئيسي المستطيل في واجهة الموقع -->
         <img src="cc.jpg" alt="شعار مؤسسة تسليك مجاري بالرياض" class="main-header-logo">
         <h1>افضل شركة تسليك مجاري بالرياض | حلول انسداد الصرف 24 ساعة</h1>
         <p>الشركة الأولى والمعتمدة في تقديم خدمات تسليك المجاري بالضغط، شفط البيارات، ومعالجة انسداد المواسير في كافة أحياء الرياض بأحدث التقنيات وأقل الأسعار.</p>
